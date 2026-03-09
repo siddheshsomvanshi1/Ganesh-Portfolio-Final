@@ -1,18 +1,11 @@
 {
   "version": 2,
-  "builds": [
+  "buildCommand": "npm run build --prefix portfolio-react",
+  "outputDirectory": "portfolio-react/dist",
+  "rewrites": [
     {
-      "src": "portfolio-react/package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "portfolio-react/dist"
-      }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }
