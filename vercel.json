@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "installCommand": "npm ci --prefix portfolio-react",
   "buildCommand": "npm run build --prefix portfolio-react",
   "outputDirectory": "portfolio-react/dist",
   "rewrites": [
